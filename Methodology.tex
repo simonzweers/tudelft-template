@@ -1,9 +1,34 @@
 \section{Methodology}
 This section has a subsection.
 
-\subsection{Subsection}
+\subsection{Some Math}
 This subsection contains \autoref{eq:1}.
 \begin{equation}
 \label{eq:1}
-    h(r) = \cfrac{Q}{2\pi T} ln(\cfrac{r_i}{r_0})+h_0
+    h(r) = \cfrac{Q}{2\pi T} \ln\left(\cfrac{r_i}{r_0}\right)+h_0
 \end{equation}
+
+\subsection{A circuit}
+This subsection contains \autoref{circuit:useful_circuit}
+
+\begin{figure}[H]
+	\centering
+	\begin{circuitikz}[american, scale=1]
+		\draw
+		(0,8) to [R, l=$3k\Omega$] (4,8)
+		to [R, l=$4k\Omega$] (8,8)
+		to [V, l=$12V$, invert] (8,4)
+		to [R, l_=$6k\Omega$] (8,0)
+		to [short] (0,0)
+		to [V, l=$10V$, invert] (0,4)
+		to [R, l=$2k\Omega$] (0, 8)
+		(4,8) to [I, l=2mA, *-*, invert] (4,4)
+		to [R, l=$6k\Omega$, *-*] (8,4)
+		(4,4) to [R, l=$3k\Omega$] (4, 2) to [V, l=$8V$, -*] (4,0)
+		(9, 4) to [open, v^>=$V_o$] (9, 0)
+		;
+	\end{circuitikz}
+	\caption{A useful circuit}
+	\label{circuit:useful_circuit}
+\end{figure}
+
