@@ -3,7 +3,7 @@
 To run it locally, install the following packages:
 
 ```bash
-sudo dnf install inkscape texlive texlive-{amsmath,tcolorbox,svg,circuitikz,minted,roboto,ucs,todonotes,titling,blindtext,sectsty,tikzpagenodes,helvetic} python3
+sudo dnf install inkscape latexmk texlive texlive-{amsmath,tcolorbox,svg,circuitikz,minted,roboto,ucs,todonotes,titling,blindtext,sectsty,tikzpagenodes,helvetic} python3
 ```
 
 One-liner to get all files in the current directory:
