@@ -12,3 +12,18 @@ def heat_produced(filename, time_data, plot_cols):
     heat = time_data['PRD1 : energy (kJ/day)']*-1
     time = time_data['Time (yrs)']
 \end{lstlisting}
+
+\section{Python code (Minted)}
+\begin{minted}[linenos, bgcolor=white]{python}
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#I forgot what this does
+def heat_produced(filename, time_data, plot_cols):
+    heat = time_data['PRD1 : energy (kJ/day)']*-1
+    time = time_data['Time (yrs)']
+\end{minted}
+
+\section{Python code (Minted file input)}
+\inputminted[linenos, breaklines]{python}{resources/sort.py}
